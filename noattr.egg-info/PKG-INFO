@@ -1,7 +1,7 @@
 Metadata-Version: 1.1
 Name: noattr
-Version: 0.0.1
-Summary: Python text operations module
+Version: 0.0.2
+Summary: To avoid NoneType AttributeError exception on chained attributes
 Home-page: https://github.com/elapouya/noattr
 Author: Eric Lapouyade
 Author-email: elapouya@gmail.com
@@ -35,6 +35,10 @@ Description:
         
         News
         ====
+        0.0.2 (2015-07-27)
+        ------------------
+        Update description
+        
         0.0.1 (2015-07-27)
         ------------------
         First version

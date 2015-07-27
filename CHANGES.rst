@@ -1,7 +1,3 @@
-0.0.2 (2015-07-27)
+0.0.3 (2015-07-27)
 ------------------
-Update description
-
-0.0.1 (2015-07-27)
-------------------
-First version
+First official version
