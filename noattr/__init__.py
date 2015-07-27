@@ -5,7 +5,7 @@ Création : 18 juin 2010
 @author: Eric Lapouyade
 '''
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 class NoAttrType(object):
     __name__ = 'NoAttrType'

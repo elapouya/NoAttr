@@ -24,8 +24,8 @@ News
 """ % read('README', 'CHANGES')
 
 setup(name='noattr',
-      version='0.0.1',
-      description='Python text operations module',
+      version='0.0.2',
+      description='To avoid NoneType AttributeError exception on chained attributes',
       long_description=long_description,
       classifiers=[
           "Intended Audience :: Developers",
