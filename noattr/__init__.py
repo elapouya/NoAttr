@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+'''
+Création : 18 juin 2010
+
+@author: Eric Lapouyade
+'''
+
+__version__ = '0.0.1'
+
+class NoneAttr(object):
+    __name__ = 'NoneAttr'
+    
+    def __getattr__(self,attr):
+        if attr in ['ljust','rjust','rfind','find','rindex','index','count']:
+            return getattr('',attr)
+        return self
+    
+    def __getitem__(self,key):
+        return self
+    
+    def __call__(self,*args,**kwargs):
+        return self
+    
+    def __nonzero__(self):
+        return False    
+    
+    def __repr__(self):
+        return ''
+    __str__ = __repr__
+    
+    def __len__(self):
+        return 0
+    __int__ = __len__
+    __pos__ = __len__
+    __neg__ = __len__
+    
+    def __add__(self,other):
+        return other
+    __or__ = __add__
+    __xor__ = __add__
+    __radd__ = __add__
+    __rsub__ = __add__
+        
+    def __sub__(self,other):
+        return -other
+    
+    def __mul__(self,other):
+        return 0    
+    __pow__ = __mul__
+    __lshift__ = __mul__
+    __rshift__ = __mul__
+    __floordiv__ = __mul__
+    __mod__ = __mul__
+    __divmod__ = __mul__
+    __div__ = __mul__
+    __truediv__ = __mul__
+    __rmul__ = __mul__
+    
+    def items(self):
+        return ()
+    
+    def get(self,attr,default=None):
+        if default is None:
+            return self
+        else:
+            return default
+
+    def __iter__(self):
+        return self
+    
+    def next(self):
+        raise StopIteration
+    
+    def __gt__(self,other):
+        return False
+    __lt__ = __gt__
+    __le__ = __gt__
+    __ge__ = __gt__
+    
+    def __delitem__(self,key):
+        pass
