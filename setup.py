@@ -29,7 +29,7 @@ setup(name='noattr',
       long_description=long_description,
       classifiers=[
           "Intended Audience :: Developers",
-          "Development Status :: 2 - Pre-Alpha",
+          "Development Status :: 4 - Beta",
           "Programming Language :: Python :: 2",
           "Programming Language :: Python :: 2.7",
       ],
