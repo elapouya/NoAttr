@@ -7,8 +7,8 @@ Création : 18 juin 2010
 
 __version__ = '0.0.1'
 
-class NoneAttr(object):
-    __name__ = 'NoneAttr'
+class NoAttrType(object):
+    __name__ = 'NoAttrType'
     
     def __getattr__(self,attr):
         if attr in ['ljust','rjust','rfind','find','rindex','index','count']:
@@ -25,8 +25,10 @@ class NoneAttr(object):
         return False    
     
     def __repr__(self):
+        return 'NoAttr'
+    
+    def __str__(self):
         return ''
-    __str__ = __repr__
     
     def __len__(self):
         return 0
@@ -79,3 +81,5 @@ class NoneAttr(object):
     
     def __delitem__(self,key):
         pass
+    
+NoAttr = NoAttrType()
