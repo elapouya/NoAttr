@@ -5,7 +5,7 @@ Création : 18 juin 2010
 @author: Eric Lapouyade
 '''
 
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 
 class NoAttrType(object):
     __name__ = 'NoAttrType'
@@ -84,5 +84,9 @@ class NoAttrType(object):
 
     def __delitem__(self,key):
         pass
+
+    @property
+    def as_list(self):
+        return []
 
 NoAttr = NoAttrType()
