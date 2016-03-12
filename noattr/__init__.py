@@ -5,7 +5,7 @@ Création : 18 juin 2010
 @author: Eric Lapouyade
 '''
 
-__version__ = '0.0.5'
+__version__ = '0.0.6'
 
 class NoAttrType(object):
     __name__ = 'NoAttrType'
@@ -41,7 +41,8 @@ class NoAttrType(object):
 
     def __add__(self,other):
         return other
-    __or__ = __add__
+    # Be carful : DO NOT define __or__ otherwise python_textops is not working properly
+    #__or__ = __add__
     __xor__ = __add__
     __radd__ = __add__
     __rsub__ = __add__
@@ -53,7 +54,8 @@ class NoAttrType(object):
         return 0
     __pow__ = __mul__
     __lshift__ = __mul__
-    __rshift__ = __mul__
+    #__rshift__ = __mul__
+    # Be carful : DO NOT define __rshift__ otherwise python_textops is not working properly
     __floordiv__ = __mul__
     __mod__ = __mul__
     __divmod__ = __mul__
