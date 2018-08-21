@@ -1,3 +1,7 @@
+0.0.7 (2018-08-21)
+------------------
+Update code for python3 compatibility
+
 0.0.6 (2016-03-11)
 ------------------
 remove __or__ and __rshift__ definition for python_textops

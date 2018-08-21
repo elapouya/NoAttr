@@ -5,7 +5,7 @@ Création : 18 juin 2010
 @author: Eric Lapouyade
 '''
 
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 
 class NoAttrType(object):
     __name__ = 'NoAttrType'
@@ -13,6 +13,8 @@ class NoAttrType(object):
     def __getattr__(self,attr):
         if attr in ['ljust','rjust','rfind','find','rindex','index','count']:
             return getattr('',attr)
+        if attr == '__wrapped__':
+            raise AttributeError
         return self
 
     def __setattr__(self,attr,value):
