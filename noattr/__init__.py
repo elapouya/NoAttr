@@ -5,7 +5,7 @@ Création : 18 juin 2010
 @author: Eric Lapouyade
 '''
 
-__version__ = '0.0.7'
+__version__ = '0.0.8'
 
 class NoAttrType(object):
     __name__ = 'NoAttrType'
@@ -75,7 +75,7 @@ class NoAttrType(object):
             return default
 
     def __iter__(self):
-        return self
+        return iter([])
 
     def next(self):
         raise StopIteration

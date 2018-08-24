@@ -1,3 +1,7 @@
+0.0.8 (2018-08-24)
+------------------
+__iter__() now returns an empty iter
+
 0.0.7 (2018-08-21)
 ------------------
 Update code for python3 compatibility
