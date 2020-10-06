@@ -55,4 +55,4 @@ However, for ``ljust()``, ``rjust()``, ``rfind()``, ``find()``, ``rindex()``, ``
 Installation
 ############
 
-$ ``pip install NoAttr``
+$ ``pip install noattr``
