@@ -18,7 +18,7 @@ naïvely this will fail as soon as one of the intermediate attributes returns ``
 Instead of returning ``None``, you want to return an instance of ``NoAttr``, which will caused hierarchical attribute accesses to keep returning ``NoAttr`` until the end of the chain ::
 
     >>> from noattr import NoAttr
-    >>> obj = NoAttr()
+    >>> obj = NoAttr
 
     >>> obj.a
     NoAttr
